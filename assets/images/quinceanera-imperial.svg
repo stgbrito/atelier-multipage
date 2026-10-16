@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500">
+  <rect width="400" height="500" fill="#EFE8DD"/>
+  <circle cx="200" cy="215" r="140" fill="#FAF6F0"/>
+  <!-- Tiara / Crown detail -->
+  <path d="M182 72 L190 60 L200 70 L210 60 L218 72 Z" fill="#B89158"/>
+  <!-- Corset Bodice -->
+  <path d="M162 100 C180 114, 220 114, 238 100 L232 168 C212 180, 188 180, 168 168 Z" fill="#B56E65"/>
+  <!-- Princess Ballgown Skirt -->
+  <path d="M168 168 C105 235, 65 340, 52 448 L348 448 C335 340, 295 235, 232 168 Z" fill="#B56E65"/>
+  <path d="M180 172 Q130 310 95 448" stroke="#E5C384" stroke-width="1.5" fill="none" opacity="0.7"/>
+  <path d="M200 175 L200 448" stroke="#E5C384" stroke-width="1.5" fill="none" opacity="0.7"/>
+  <path d="M220 172 Q270 310 305 448" stroke="#E5C384" stroke-width="1.5" fill="none" opacity="0.7"/>
+  <rect x="28" y="455" width="344" height="28" rx="6" fill="#1E1916" opacity="0.82"/>
+  <text x="200" y="473" text-anchor="middle" fill="#FAF7F2" font-family="Georgia, serif" font-size="11" letter-spacing="1.5">QUINCEAÑERAS (XV AÑOS)</text>
+</svg>

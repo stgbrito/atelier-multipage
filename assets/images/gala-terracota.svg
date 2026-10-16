@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500">
+  <rect width="400" height="500" fill="#EFE8DD"/>
+  <circle cx="200" cy="220" r="135" fill="#FAF6F0"/>
+  <path d="M165 95 C185 108, 215 108, 235 95 L248 165 C225 178, 175 178, 152 165 Z" fill="#8C4A32"/>
+  <path d="M152 165 C120 260, 95 360, 75 450 L325 450 C305 360, 280 260, 248 165 Z" fill="#8C4A32"/>
+  <path d="M175 168 Q155 300 125 450" stroke="#B89158" stroke-width="1.5" fill="none" opacity="0.6"/>
+  <path d="M225 168 Q245 300 275 450" stroke="#B89158" stroke-width="1.5" fill="none" opacity="0.6"/>
+  <rect x="28" y="455" width="344" height="28" rx="6" fill="#1E1916" opacity="0.82"/>
+  <text x="200" y="473" text-anchor="middle" fill="#FAF7F2" font-family="Georgia, serif" font-size="11" letter-spacing="1.5">GALA &amp; CUMPLEAÑOS</text>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500">
+  <rect width="400" height="500" fill="#EFE8DD"/>
+  <circle cx="200" cy="220" r="135" fill="#FAF6F0"/>
+  <!-- Tailored Female Blazer -->
+  <path d="M148 95 L252 95 L268 235 L132 235 Z" fill="#C9B79C"/>
+  <path d="M178 95 L200 175 L222 95" stroke="#8C4A32" stroke-width="3.5" fill="none"/>
+  <circle cx="200" cy="192" r="4" fill="#8C4A32"/>
+  <!-- Tailored Wide-Leg Trousers -->
+  <path d="M142 235 L132 445 L193 445 L200 285 L207 445 L268 445 L258 235 Z" fill="#2A2421"/>
+  <rect x="28" y="455" width="344" height="28" rx="6" fill="#1E1916" opacity="0.82"/>
+  <text x="200" y="473" text-anchor="middle" fill="#FAF7F2" font-family="Georgia, serif" font-size="11" letter-spacing="1.5">SASTRERÍA EJECUTIVA</text>
+</svg>

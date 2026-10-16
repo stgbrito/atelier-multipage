@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agendar Cita y Contacto | Juana de Jesús • Atelier</title>
+  <meta name="description" content="Agenda tu cita de confección femenina a medida en nuestro estudio de Villa Altagracia o solicita consulta a domicilio VIP en Santo Domingo, Bonao y Santiago." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- TOP ANNOUNCEMENT BAR -->
+  <div class="top-bar sans">
+    Cumpleaños • XV Años • Bodas • Graduaciones • Sastrería Femenina •
+    <a href="tel:+18097944253">📞 (809) 794-4253</a>
+  </div>
+
+  <!-- HEADER & NAVIGATION -->
+  <header>
+    <a href="index.html" class="brand-logo">
+      <span class="title">Juana de Jesús • Atelier</span>
+      <span class="subtitle sans">Alta Costura Femenina a Medida</span>
+    </a>
+
+    <button class="menu-toggle sans" onclick="toggleMobileMenu()" aria-label="Abrir menú">
+      ☰ Menú
+    </button>
+
+    <nav class="sans" id="mainNav">
+      <a href="index.html" class="nav-link">Inicio &amp; Lookbook</a>
+      <a href="servicios.html" class="nav-link">Servicios y Modalidades</a>
+      <a href="nosotros.html" class="nav-link">Nosotros</a>
+      <a href="carreras.html" class="nav-link">Trabaja en el Atelier</a>
+      <a href="contacto.html" class="nav-link active">Agendar Cita</a>
+      <div class="header-cta-group">
+        <a href="tel:+18097944253" class="btn btn-outline" style="padding:8px 14px; font-size:0.78rem;">📞 (809) 794-4253</a>
+        <a href="https://wa.me/18097944253?text=Hola%20Juana%20de%20Jes%C3%BAs%20%E2%80%A2%20Atelier%2C%20deseo%20informaci%C3%B3n%20sobre%20confecci%C3%B3n%20a%20medida." target="_blank" class="btn btn-whatsapp" style="padding:8px 16px; font-size:0.78rem;">💬 WhatsApp</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- PAGE HERO -->
+    <div class="page-hero">
+      <div class="page-hero-inner">
+        <span class="hero-badge sans">Atención Privada por Cita Previa</span>
+        <h1>Agenda tu Consulta en el <em>Atelier</em> o a Domicilio</h1>
+        <p class="sans">
+          Completa el formulario para enviarnos tu solicitud directamente al WhatsApp oficial <strong>(809) 794-4253</strong> o llámanos para coordinar tu espacio en agenda.
+        </p>
+      </div>
+    </div>
+
+    <!-- WHATSAPP BOOKING / INQUIRY SECTION -->
+    <section id="citas">
+      <div class="booking-box">
+        <div>
+          <span class="hero-badge sans">Atención Personalizada</span>
+          <h2 style="font-size:1.95rem; font-weight:normal; margin-bottom:12px;">Agenda tu Consulta</h2>
+          <p class="sans" style="color:var(--text-muted); font-size:0.94rem; margin-bottom:22px;">
+            Completa estos datos breves para abrir una conversación directa en nuestro WhatsApp <strong>(809) 794-4253</strong> con tu solicitud lista, o llámanos directamente.
+          </p>
+          <div class="sans" style="background:var(--bg-ivory); padding:20px; border-radius:var(--radius-md); border:1px solid var(--border-hairline); font-size:0.85rem; display:grid; gap:10px;">
+            <p><strong>📞 Teléfono y WhatsApp Oficial:</strong> <a href="tel:+18097944253" style="color:var(--accent-terracotta); font-weight:600; text-decoration:none;">(809) 794-4253</a></p>
+            <p><strong>📍 Estudio Principal:</strong> Villa Altagracia, Prov. San Cristóbal (a 35 min de Santo Domingo por la Autopista Duarte • Solo con cita previa; no realizamos arreglos menores).</p>
+            <p><strong>🚗 Servicio a Domicilio VIP:</strong> Disponible únicamente para <strong>Santo Domingo, Bonao y Santiago</strong> mediante pago adicional de consulta a domicilio por adelantado.</p>
+            <p><strong>🕒 Horario de Citas:</strong> Lunes a Sábado (en horario acordado previamente según disponibilidad de agenda).</p>
+            <p><strong>⏳ Anticipación sugerida:</strong> 2 a 4 semanas para graduaciones y sastrería ejecutiva/ministerial; 3 a 5 semanas para gala/cumpleaños; 6 a 8 semanas para Quinceañeras (XV años), novias y cortejos de boda.</p>
+          </div>
+        </div>
+
+        <form class="booking-form sans" onsubmit="sendClientWhatsApp(event)">
+          <div class="form-group">
+            <label>Tu Nombre Completo *</label>
+            <input type="text" id="clientName" required placeholder="Ej: María Fernanda Gómez" />
+          </div>
+
+          <div class="form-group">
+            <label>Modalidad de Cita Preferida *</label>
+            <select id="clientMode" required onchange="handleModeChange()">
+              <option value="Cita en el Atelier (Villa Altagracia)">Cita en el Atelier (Villa Altagracia)</option>
+              <option value="Domicilio VIP (Pago adicional por adelantado)">Consulta a Domicilio (Solo Santo Domingo, Bonao o Santiago — Pago por adelantado)</option>
+            </select>
+          </div>
+
+          <div class="domicilio-alert" id="domicilioAlert">
+            <strong>Importante sobre el Servicio a Domicilio:</strong> Disponible exclusivamente en <strong>Santo Domingo, Bonao y Santiago</strong>. La visita de consulta y toma de medidas tiene un costo adicional que se paga por adelantado para confirmar la cita.
+          </div>
+
+          <div class="form-row-2col">
+            <div class="form-group">
+              <label>Tu Ciudad *</label>
+              <select id="clientCity" required>
+                <option value="Villa Altagracia">Villa Altagracia</option>
+                <option value="Santo Domingo">Santo Domingo</option>
+                <option value="Bonao">Bonao</option>
+                <option value="Santiago">Santiago</option>
+                <option value="San Cristóbal (Visita al Atelier)">San Cristóbal (Visita al Atelier)</option>
+                <option value="Otra ciudad (Visita al Atelier)">Otra ciudad (Visita al Atelier)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Fecha Aproximada del Evento</label>
+              <input type="date" id="clientDate" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Tipo de Confección Femenina de Interés *</label>
+            <select id="clientService" required onchange="handleServiceChange()">
+              <option value="Vestido de Cumpleaños / Quinceañera (XV Años)">Vestido de Cumpleaños / Quinceañera (XV Años)</option>
+              <option value="Vestido de Novia / Cortejo de Boda (Matching)">Vestido de Novia / Cortejo de Boda (Matching)</option>
+              <option value="Vestido de Graduación / Investidura / Ceremonia">Vestido de Graduación / Investidura / Ceremonia</option>
+              <option value="Uniforme Ejecutivo Individual / Traje Sastre (Abogada, Maestra, Ejecutiva)">Uniforme Ejecutivo Individual / Traje Sastre (Abogada, Maestra, Ejecutiva)</option>
+              <option value="Traje o Vestido para Líder de Iglesia / Ministerio">Traje o Vestido para Líder de Iglesia / Ministerio</option>
+              <option value="Vestido de Gala / Fiesta a Medida">Vestido de Gala / Fiesta a Medida</option>
+              <option value="Otros (Diseño Femenino Personalizado)">Otros (Diseño Femenino Personalizado)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>Detalles de tu Idea (Opcional)</label>
+            <textarea id="clientNotes" rows="2" placeholder="Cuéntanos colores, idea del diseño o tipo de celebración..."></textarea>
+          </div>
+
+          <div class="form-actions-2col">
+            <button type="submit" class="btn btn-whatsapp" style="width:100%; padding:12px;">
+              💬 Enviar por WhatsApp
+            </button>
+            <a href="tel:+18097944253" class="btn btn-outline" style="width:100%; padding:12px; text-align:center;">
+              📞 Llamar Ahora
+            </a>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="sans">
+    <div class="footer-inner">
+      <div>
+        <strong style="color:#FAF8F5; font-size:1rem; letter-spacing:0.12em; text-transform:uppercase;">Juana de Jesús • Atelier</strong>
+        <p style="margin-top:8px; max-width:390px;">Alta costura femenina a medida: vestidos de cumpleaños, quinceañeras (XV años), novias, cortejos de boda armonizados (matching), graduación y sastrería ejecutiva o ministerial.</p>
+        <p style="margin-top:10px;"><strong>Teléfono &amp; WhatsApp:</strong> <a href="tel:+18097944253">(809) 794-4253</a></p>
+      </div>
+
+      <div>
+        <strong style="color:#FAF8F5;">Navegación del Atelier</strong>
+        <ul class="footer-links">
+          <li><a href="index.html">Inicio &amp; Lookbook</a></li>
+          <li><a href="servicios.html">Servicios y Modalidades</a></li>
+          <li><a href="nosotros.html">Nuestra Historia y Filosofía</a></li>
+          <li><a href="carreras.html">Trabaja en el Atelier (Villa Altagracia)</a></li>
+          <li><a href="contacto.html">Agendar Cita por WhatsApp</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <strong style="color:#FAF8F5;">Respaldo Corporativo y Facturación</strong>
+        <p style="margin-top:8px;">Operado bajo <strong>Bridge to Solutions</strong></p>
+        <p>Reg. ONAPI No. 856888 • RNC: 133494442</p>
+        <p>Disponibilidad de Comprobantes Fiscales (NCF) para eventos, ministerios e instituciones.</p>
+      </div>
+    </div>
+
+    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; max-width:1280px; margin:0 auto; color:#8A7E75; font-size:0.76rem;">
+      <span>&copy; 2026 Juana de Jesús • Atelier &amp; Bridge to Solutions. Todos los derechos reservados.</span>
+      <a href="index.html#coleccion" style="color:#E5C384; text-decoration:none;">Explorar Lookbook →</a>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP & CALL BUTTONS -->
+  <div class="floating-actions sans">
+    <a href="tel:+18097944253" class="floating-call">
+      📞 (809) 794-4253
+    </a>
+    <a href="https://wa.me/18097944253?text=Hola%20Juana%20de%20Jes%C3%BAs%20%E2%80%A2%20Atelier%2C%20deseo%20informaci%C3%B3n%20sobre%20una%20confecci%C3%B3n%20a%20medida." target="_blank" class="floating-wa">
+      💬 WhatsApp
+    </a>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

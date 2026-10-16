@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trabaja en el Atelier | Convocatoria en Villa Altagracia • Juana de Jesús</title>
+  <meta name="description" content="Convocatoria local en Villa Altagracia: buscamos 1 a 2 talentos con pasión por la costura para integrarse a Juana de Jesús • Atelier." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- TOP ANNOUNCEMENT BAR -->
+  <div class="top-bar sans">
+    Cumpleaños • XV Años • Bodas • Graduaciones • Sastrería Femenina •
+    <a href="tel:+18097944253">📞 (809) 794-4253</a>
+  </div>
+
+  <!-- HEADER & NAVIGATION -->
+  <header>
+    <a href="index.html" class="brand-logo">
+      <span class="title">Juana de Jesús • Atelier</span>
+      <span class="subtitle sans">Alta Costura Femenina a Medida</span>
+    </a>
+
+    <button class="menu-toggle sans" onclick="toggleMobileMenu()" aria-label="Abrir menú">
+      ☰ Menú
+    </button>
+
+    <nav class="sans" id="mainNav">
+      <a href="index.html" class="nav-link">Inicio &amp; Lookbook</a>
+      <a href="servicios.html" class="nav-link">Servicios y Modalidades</a>
+      <a href="nosotros.html" class="nav-link">Nosotros</a>
+      <a href="carreras.html" class="nav-link active">Trabaja en el Atelier</a>
+      <a href="contacto.html" class="nav-link">Agendar Cita</a>
+      <div class="header-cta-group">
+        <a href="tel:+18097944253" class="btn btn-outline" style="padding:8px 14px; font-size:0.78rem;">📞 (809) 794-4253</a>
+        <a href="https://wa.me/18097944253?text=Hola%20Juana%20de%20Jes%C3%BAs%20%E2%80%A2%20Atelier%2C%20deseo%20informaci%C3%B3n%20sobre%20confecci%C3%B3n%20a%20medida." target="_blank" class="btn btn-whatsapp" style="padding:8px 16px; font-size:0.78rem;">💬 WhatsApp</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- PAGE HERO -->
+    <div class="page-hero">
+      <div class="page-hero-inner">
+        <span class="hero-badge sans">Convocatoria Local • Villa Altagracia</span>
+        <h1>Crece con Nosotros: Talento y Pasión por la <em>Alta Costura</em></h1>
+        <p class="sans">
+          Buscamos integrar a nuestro estudio en Villa Altagracia de 1 a 2 personas que amen el arte de la costura, el orden y los acabados de primera calidad.
+        </p>
+      </div>
+    </div>
+
+    <!-- CAREERS / RECRUITMENT SECTION FOR VILLA ALTAGRACIA -->
+    <section style="padding-top:36px;">
+      <div class="careers-section" style="margin-top:0;">
+        <div class="careers-grid">
+          <div>
+            <span class="careers-badge sans">Vacante Activa • Estudio en Villa Altagracia</span>
+            <h2>Buscamos 1 a 2 Talentos con Pasión por la Costura</h2>
+            <p class="sans" style="color:#D9D0C7; font-size:0.95rem;">
+              En <strong>Juana de Jesús • Atelier</strong> buscamos integrar a 1 o 2 personas residentes en <strong>Villa Altagracia</strong> que amen el arte de la costura, el orden y los acabados de primera calidad. Trabajarás junto a nuestra diseñadora principal en un estudio tranquilo, respetuoso y enfocado en piezas femeninas de alto valor (vestidos de gala, XV años, bodas, graduación y sastrería ejecutiva/ministerial).
+            </p>
+            <ul class="careers-list sans">
+              <li><strong>Lo que valoramos:</strong> Pasión real por la costura, puntualidad, discreción, deseo de perfeccionar técnicas de alta costura y cuidado por los detalles.</li>
+              <li><strong>Conocimientos base:</strong> Manejo de máquina recta y/o overlock, corte básico, hilvanado o planchado fino de prendas (te formamos en los acabados del Atelier).</li>
+              <li><strong>Contacto directo:</strong> Postúlate usando el formulario o llamando/escribiendo directamente al <strong>(809) 794-4253</strong>.</li>
+            </ul>
+          </div>
+
+          <div class="careers-card sans">
+            <h3 style="font-size:1.22rem; margin-bottom:6px; color:#FAF7F2;">Postúlate al Atelier</h3>
+            <p style="font-size:0.83rem; color:#C7BDB4; margin-bottom:16px;">Completa tus datos para enviarnos tu perfil por WhatsApp al (809) 794-4253 y coordinar una entrevista práctica en Villa Altagracia.</p>
+            <form onsubmit="sendCareerWhatsApp(event)" style="display:grid; gap:12px;">
+              <div class="form-group">
+                <label>Nombre y Apellido *</label>
+                <input type="text" id="candName" required placeholder="Tu nombre completo" />
+              </div>
+              <div class="form-group">
+                <label>Sector en Villa Altagracia *</label>
+                <input type="text" id="candSector" required placeholder="Ej: Centro, Los Solares, Barrio Puerto Rico..." />
+              </div>
+              <div class="form-group">
+                <label>Nivel de Experiencia en Costura *</label>
+                <select id="candExp" required>
+                  <option value="Intermedio (Manejo máquina recta/overlock y confección básica)">Intermedio (Manejo máquina recta/overlock)</option>
+                  <option value="Avanzado (Experiencia en vestidos, entalles y cierres finos)">Avanzado (Experiencia en vestidos y acabados)</option>
+                  <option value="Apasionada con base práctica (Aprendiz avanzada)">Apasionada con base práctica (Aprendiz avanzada)</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Disponibilidad de Horario *</label>
+                <select id="candAvail" required>
+                  <option value="Tiempo completo">Tiempo completo</option>
+                  <option value="Medio tiempo (Mañanas o Tardes)">Medio tiempo (Mañanas o Tardes)</option>
+                  <option value="Por días / Proyectos especiales">Por días / Proyectos especiales</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>¿Qué tipo de prendas has cosido o qué te motiva?</label>
+                <textarea id="candMotivation" rows="2" placeholder="Cuéntanos brevemente tu experiencia..."></textarea>
+              </div>
+              <button type="submit" class="btn btn-gold" style="width:100%; margin-top:4px; padding:13px;">
+                💬 Enviar Postulación al (809) 794-4253 →
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- BENEFICIOS DE APRENDER Y TRABAJAR EN EL ATELIER -->
+      <div class="section-header" style="margin-top:48px;">
+        <span class="eyebrow sans">Ambiente de Trabajo</span>
+        <h2>¿Qué Ofrece Nuestro Estudio en Villa Altagracia?</h2>
+      </div>
+
+      <div class="process-strip sans" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+        <div style="background:var(--bg-card); border:1px solid var(--border-soft); border-radius:var(--radius-md); padding:24px;">
+          <strong style="color:var(--accent-terracotta); font-size:0.76rem; letter-spacing:0.14em; text-transform:uppercase; display:block; margin-bottom:8px;">01 • Mentoría Directa</strong>
+          <h3 style="font-size:1.15rem; font-weight:normal; margin-bottom:8px;">Aprendizaje de Alta Costura</h3>
+          <span style="font-size:0.88rem; color:var(--text-muted); line-height:1.5;">Perfecciona técnicas de entalle fino, costuras francesas, forrería limpia y confección de vestidos de gala, XV años y sastrería junto a Juana de Jesús.</span>
+        </div>
+        <div style="background:var(--bg-card); border:1px solid var(--border-soft); border-radius:var(--radius-md); padding:24px;">
+          <strong style="color:var(--accent-terracotta); font-size:0.76rem; letter-spacing:0.14em; text-transform:uppercase; display:block; margin-bottom:8px;">02 • Ambiente Tranquilo</strong>
+          <h3 style="font-size:1.15rem; font-weight:normal; margin-bottom:8px;">Estudio Ordenado y Respetuoso</h3>
+          <span style="font-size:0.88rem; color:var(--text-muted); line-height:1.5;">No somos una fábrica masiva; trabajamos por encargos selectos en un espacio acogedor, limpio y bien organizado en Villa Altagracia.</span>
+        </div>
+        <div style="background:var(--bg-card); border:1px solid var(--border-soft); border-radius:var(--radius-md); padding:24px;">
+          <strong style="color:var(--accent-terracotta); font-size:0.76rem; letter-spacing:0.14em; text-transform:uppercase; display:block; margin-bottom:8px;">03 • Flexibilidad y Valoración</strong>
+          <h3 style="font-size:1.15rem; font-weight:normal; margin-bottom:8px;">Crecimiento Según tu Desempeño</h3>
+          <span style="font-size:0.88rem; color:var(--text-muted); line-height:1.5;">Opciones de horario a convenir (tiempo completo, medio tiempo o por proyectos especiales) valorando tu dedicación y calidad en cada puntada.</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="sans">
+    <div class="footer-inner">
+      <div>
+        <strong style="color:#FAF8F5; font-size:1rem; letter-spacing:0.12em; text-transform:uppercase;">Juana de Jesús • Atelier</strong>
+        <p style="margin-top:8px; max-width:390px;">Alta costura femenina a medida: vestidos de cumpleaños, quinceañeras (XV años), novias, cortejos de boda armonizados (matching), graduación y sastrería ejecutiva o ministerial.</p>
+        <p style="margin-top:10px;"><strong>Teléfono &amp; WhatsApp:</strong> <a href="tel:+18097944253">(809) 794-4253</a></p>
+      </div>
+
+      <div>
+        <strong style="color:#FAF8F5;">Navegación del Atelier</strong>
+        <ul class="footer-links">
+          <li><a href="index.html">Inicio &amp; Lookbook</a></li>
+          <li><a href="servicios.html">Servicios y Modalidades</a></li>
+          <li><a href="nosotros.html">Nuestra Historia y Filosofía</a></li>
+          <li><a href="carreras.html">Trabaja en el Atelier (Villa Altagracia)</a></li>
+          <li><a href="contacto.html">Agendar Cita por WhatsApp</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <strong style="color:#FAF8F5;">Respaldo Corporativo y Facturación</strong>
+        <p style="margin-top:8px;">Operado bajo <strong>Bridge to Solutions</strong></p>
+        <p>Reg. ONAPI No. 856888 • RNC: 133494442</p>
+        <p>Disponibilidad de Comprobantes Fiscales (NCF) para eventos, ministerios e instituciones.</p>
+      </div>
+    </div>
+
+    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; max-width:1280px; margin:0 auto; color:#8A7E75; font-size:0.76rem;">
+      <span>&copy; 2026 Juana de Jesús • Atelier &amp; Bridge to Solutions. Todos los derechos reservados.</span>
+      <a href="contacto.html" style="color:#E5C384; text-decoration:none;">Solicitar Cita Personalizada →</a>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP & CALL BUTTONS -->
+  <div class="floating-actions sans">
+    <a href="tel:+18097944253" class="floating-call">
+      📞 (809) 794-4253
+    </a>
+    <a href="https://wa.me/18097944253?text=Hola%20Juana%20de%20Jes%C3%BAs%20%E2%80%A2%20Atelier%2C%20deseo%20informaci%C3%B3n%20sobre%20la%20vacante%20de%20costura%20en%20Villa%20Altagracia." target="_blank" class="floating-wa">
+      💬 WhatsApp
+    </a>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

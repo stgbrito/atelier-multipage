@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Juana de Jesús • Atelier | Alta Costura Femenina a Medida</title>
+  <meta name="description" content="Alta costura femenina a medida: vestidos de cumpleaños, quinceañeras (XV años), novias, cortejos de boda armonizados (matching), graduación y sastrería ejecutiva o ministerial." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- TOP ANNOUNCEMENT BAR -->
+  <div class="top-bar sans">
+    Cumpleaños • XV Años • Bodas • Graduaciones • Sastrería Femenina •
+    <a href="tel:+18097944253">📞 (809) 794-4253</a>
+  </div>
+
+  <!-- HEADER & NAVIGATION -->
+  <header>
+    <a href="index.html" class="brand-logo">
+      <span class="title">Juana de Jesús • Atelier</span>
+      <span class="subtitle sans">Alta Costura Femenina a Medida</span>
+    </a>
+
+    <button class="menu-toggle sans" onclick="toggleMobileMenu()" aria-label="Abrir menú">
+      ☰ Menú
+    </button>
+
+    <nav class="sans" id="mainNav">
+      <a href="index.html" class="nav-link active">Inicio &amp; Lookbook</a>
+      <a href="servicios.html" class="nav-link">Servicios y Modalidades</a>
+      <a href="nosotros.html" class="nav-link">Nosotros</a>
+      <a href="carreras.html" class="nav-link">Trabaja en el Atelier</a>
+      <a href="contacto.html" class="nav-link">Agendar Cita</a>
+      <div class="header-cta-group">
+        <a href="tel:+18097944253" class="btn btn-outline" style="padding:8px 14px; font-size:0.78rem;">📞 (809) 794-4253</a>
+        <a href="https://wa.me/18097944253?text=Hola%20Juana%20de%20Jes%C3%BAs%20%E2%80%A2%20Atelier%2C%20deseo%20informaci%C3%B3n%20sobre%20confecci%C3%B3n%20a%20medida." target="_blank" class="btn btn-whatsapp" style="padding:8px 16px; font-size:0.78rem;">💬 WhatsApp</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- MINIMALIST EDITORIAL HERO -->
+    <section class="hero">
+      <div>
+        <span class="hero-badge sans">Diseño Femenino por Encargo • Villa Altagracia</span>
+        <h1>El arte del entalle perfecto para tus <em>celebraciones y momentos de distinción</em>.</h1>
+        <p class="sans">
+          Más de tres décadas de maestría sartorial confeccionando a medida vestidos inolvidables de <strong>cumpleaños, quinceañeras (XV años), novias y cortejos de boda armonizados (matching)</strong>, así como trajes de <strong>graduación y sastrería ejecutiva o ministerial</strong>. Atención privada en nuestro estudio de Villa Altagracia y servicio exclusivo a domicilio en Santo Domingo, Bonao y Santiago.
+        </p>
+        <div class="hero-actions sans">
+          <a href="contacto.html" class="btn btn-primary">Agendar Consulta</a>
+          <a href="#coleccion" class="btn btn-outline">Explorar Lookbook →</a>
+        </div>
+        <div class="hero-stats sans">
+          <div class="stat-item">
+            <strong>Cumpleaños &amp; XV Años</strong>
+            <span>Corsetería y tul a tu medida</span>
+          </div>
+          <div class="stat-item">
+            <strong>Bodas &amp; Cortejos</strong>
+            <span>Novias, madrinas y damas matching</span>
+          </div>
+          <div class="stat-item">
+            <strong>Estudio &amp; Domicilio VIP</strong>
+            <span>Villa Altagracia • Sto. Dgo. • Bonao • Santiago</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-showcase">
+        <div class="hero-frame" onclick="openLightbox(909)" title="Toca para ver obra en pantalla completa">
+          <img id="heroShowcaseImg" src="assets/images/xv-armonia-esmeralda-jardin.jpg" alt="Obra Real de Juana de Jesús Atelier" />
+          <span class="hero-caption-pill sans">✦ Obra Real del Atelier • Ver Galería</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- HORIZONTAL LOOKBOOK CAROUSEL SECTION -->
+    <section id="coleccion" style="padding-top:24px;">
+      <div class="section-top-bar">
+        <div class="section-title-block">
+          <span class="eyebrow sans">Portafolio de Autor</span>
+          <h2>Lookbook de Confecciones a Medida</h2>
+        </div>
+        <div class="carousel-arrows sans">
+          <span class="carousel-count-label" id="carouselCountLabel">Mostrando colección</span>
+          <button class="carousel-arrow-btn" onclick="scrollLookbook(-1)" aria-label="Deslizar a la izquierda" title="Anterior">‹</button>
+          <button class="carousel-arrow-btn" onclick="scrollLookbook(1)" aria-label="Deslizar a la derecha" title="Siguiente">›</button>
+        </div>
+      </div>
+
+      <div class="lookbook-controls sans">
+        <div class="filter-bar">
+          <button class="filter-btn active" data-cat="todos" onclick="filterPortfolio('todos', this)">Todas las Obras</button>
+          <button class="filter-btn" data-cat="cumpleanos" onclick="filterPortfolio('cumpleanos', this)">Cumpleaños y XV Años</button>
+          <button class="filter-btn" data-cat="bodas" onclick="filterPortfolio('bodas', this)">Bodas y Cortejos</button>
+          <button class="filter-btn" data-cat="gala" onclick="filterPortfolio('gala', this)">Graduaciones y Gala</button>
+          <button class="filter-btn" data-cat="ejecutiva" onclick="filterPortfolio('ejecutiva', this)">Sastrería Ejecutiva e Iglesia</button>
+        </div>
+      </div>
+
+      <p class="category-context-note" id="categoryContextNote">
+        Desliza hacia los lados para recorrer nuestras piezas reales y toca cualquier fotografía para verla en pantalla completa.
+      </p>
+
+      <div class="carousel-outer">
+        <div class="portfolio-carousel" id="portfolioGrid" onscroll="updateCarouselProgress()"></div>
+        <div class="carousel-progress-track">
+          <div class="carousel-progress-fill" id="carouselProgressBar"></div>
+        </div>
+        <p class="swipe-hint-mobile sans">← Desliza hacia los lados para ver más diseños →</p>
+      </div>
+    </section>
+
+    <!-- RESUMEN DE MODALIDADES Y CTA A CITAS -->
+    <section id="modalidades">
+      <div class="editorial-modes-panel">
+        <div class="modes-split">
+          <div class="mode-col">
+            <div>
+              <span class="mode-tag sans">Modalidad 01 • Sin Cargo de Traslado</span>
+              <h3>Cita Privada en Nuestro Estudio (Villa Altagracia)</h3>
+              <p class="sans">
+                Te recibimos exclusivamente por cita previa en nuestro Atelier privado en Villa Altagracia (a 35 minutos de Santo Domingo por la Autopista Duarte). Incluye asesoría de silueta, selección de textiles, toma de medidas y pruebas de entalle programadas.
+              </p>
+            </div>
+            <a href="contacto.html?modo=Cita" class="btn btn-outline sans">Reservar Cita en el Estudio</a>
+          </div>
+
+          <div class="mode-col vip-col">
+            <div>
+              <span class="mode-tag sans">Modalidad 02 • Pago Adicional por Adelantado</span>
+              <h3>Consulta VIP a Domicilio (Santo Domingo, Bonao y Santiago)</h3>
+              <p class="sans">
+                Nos trasladamos a tu residencia o despacho exclusivamente en <strong>Santo Domingo, Bonao o Santiago</strong> para la sesión de diseño y toma de medidas (ideal para novias, quinceañeras, cortejos y ejecutivas). Requiere abono de consulta a domicilio por adelantado.
+              </p>
+            </div>
+            <a href="contacto.html?modo=Domicilio" class="btn btn-primary sans">Solicitar Visita a Domicilio</a>
+          </div>
+        </div>
+
+        <div class="process-strip sans">
+          <div class="process-item">
+            <strong>01. Contacto y Agenda</strong>
+            <span>Escríbenos o llámanos al (809) 794-4253 indicando tu fecha e idea.</span>
+          </div>
+          <div class="process-item">
+            <strong>02. Diseño y Medidas</strong>
+            <span>Definimos silueta y telas; iniciamos confección con el 50% de anticipo.</span>
+          </div>
+          <div class="process-item">
+            <strong>03. Prueba de Entalle</strong>
+            <span>Ajuste milimétrico sobre tu cuerpo para asegurar caída y comodidad.</span>
+          </div>
+          <div class="process-item">
+            <strong>04. Entrega de Autor</strong>
+            <span>Prenda única terminada a mano (50% restante contra entrega).</span>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align:center; margin-top:28px;" class="sans">
+        <a href="servicios.html" class="btn btn-outline">Conoce Más sobre Nuestras Especialidades y Garantías →</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- LIGHTBOX MODAL FOR FULL-SCREEN PHOTO VIEW -->
+  <div class="lightbox-modal sans" id="lightboxModal" onclick="if(event.target===this)closeLightbox()">
+    <div class="lightbox-box">
+      <button class="lightbox-close" onclick="closeLightbox()" aria-label="Cerrar">✕</button>
+      <div class="lightbox-media" id="lightboxTouchArea">
+        <button class="lightbox-nav prev" onclick="navigateLightbox(-1)" aria-label="Foto anterior" title="Anterior (←)">‹</button>
+        <img id="lightboxImg" src="" alt="" referrerpolicy="no-referrer" />
+        <button class="lightbox-nav next" onclick="navigateLightbox(1)" aria-label="Siguiente foto" title="Siguiente (→)">›</button>
+        <div class="lightbox-counter sans" id="lightboxCounter">1 / 1</div>
+      </div>
+      <div class="lightbox-info">
+        <div>
+          <span class="hero-badge" id="lightboxCategory" style="margin-bottom:8px;">Alta Costura</span>
+          <h3 id="lightboxTitle" style="font-family:'Georgia',serif; font-size:1.45rem; font-weight:normal; margin-bottom:10px;"></h3>
+          <p id="lightboxDesc" style="color:var(--text-muted); font-size:0.9rem; margin-bottom:16px;"></p>
+          <div id="lightboxMeta" style="font-size:0.8rem; color:var(--accent-terracotta); padding-top:12px; border-top:1px dashed var(--border-soft); margin-bottom:20px;"></div>
+        </div>
+        <div style="display:grid; gap:10px;">
+          <button class="btn btn-whatsapp" id="lightboxWaBtn" style="width:100%; padding:13px;">
+            💬 Consultar este diseño por WhatsApp
+          </button>
+          <button class="btn btn-outline" onclick="closeLightbox()" style="width:100%;">
+            Volver al Lookbook
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="sans">
+    <div class="footer-inner">
+      <div>
+        <strong style="color:#FAF8F5; font-size:1rem; letter-spacing:0.12em; text-transform:uppercase;">Juana de Jesús • Atelier</strong>
+        <p style="margin-top:8px; max-width:390px;">Alta costura femenina a medida: vestidos de cumpleaños, quinceañeras (XV años), novias, cortejos de boda armonizados (matching), graduaciones y sastrería ejecutiva o ministerial.</p>
+        <p style="margin-top:10px;"><strong>Teléfono &amp; WhatsApp:</strong> <a href="tel:+18097944253">(809) 794-4253</a></p>
+      </div>
+
+      <div>
+        <strong style="color:#FAF8F5;">Navegación del Atelier</strong>
+        <ul class="footer-links">
+          <li><a href="index.html">Inicio &amp; Lookbook</a></li>
+          <li><a href="servicios.html">Servicios y Modalidades</a></li>
+          <li><a href="nosotros.html">Nuestra Historia y Filosofía</a></li>
+          <li><a href="carreras.html">Trabaja en el Atelier (Villa Altagracia)</a></li>
+          <li><a href="contacto.html">Agendar Cita por WhatsApp</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <strong style="color:#FAF8F5;">Respaldo Corporativo y Facturación</strong>
+        <p style="margin-top:8px;">Operado bajo <strong>Bridge to Solutions</strong></p>
+        <p>Reg. ONAPI No. 856888 • RNC: 133494442</p>
+        <p>Disponibilidad de Comprobantes Fiscales (NCF) para profesionales, instituciones y eventos.</p>
+      </div>
+    </div>
+
+    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; max-width:1280px; margin:0 auto; color:#8A7E75; font-size:0.76rem;">
+      <span>&copy; 2026 Juana de Jesús • Atelier &amp; Bridge to Solutions. Todos los derechos reservados.</span>
+      <button onclick="openCmsModal()" style="background:none; border:none; color:#6E635B; cursor:pointer; font-size:0.74rem; text-decoration:underline;">
+        ⚙️ Sincronización Google Drive/Sheets (Conectado)
+      </button>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP & CALL BUTTONS -->
+  <div class="floating-actions sans">
+    <a href="tel:+18097944253" class="floating-call">
+      📞 (809) 794-4253
+    </a>
+    <a href="https://wa.me/18097944253?text=Hola%20Juana%20de%20Jes%C3%BAs%20%E2%80%A2%20Atelier%2C%20deseo%20informaci%C3%B3n%20sobre%20una%20confecci%C3%B3n%20a%20medida." target="_blank" class="floating-wa">
+      💬 WhatsApp
+    </a>
+  </div>
+
+  <!-- ENGINEER MODAL: GOOGLE SHEETS / DRIVE AUTO-SYNC SETUP -->
+  <div class="cms-modal sans" id="cmsModal">
+    <div class="cms-modal-box">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:14px;">
+        <h3 style="font-size:1.1rem;">Sincronización con Google Sheet &amp; Google Form</h3>
+        <button onclick="closeCmsModal()" style="background:none; border:none; font-size:1.3rem; cursor:pointer;">✕</button>
+      </div>
+      <p style="font-size:0.84rem; color:var(--text-muted); margin-bottom:12px;">
+        Conectado al Google Sheet <strong>Catálogo Web — Juana de Jesús • Atelier (Moda Femenina)</strong> (ID: <code>1Sh4pLxgeu8_fhWzOBY6FSZVMOmWHk6ehTfw3rSv2qyY</code>). Cualquier imagen nueva cargada en la carpeta de Google Drive o agregada al Sheet se muestra automáticamente en el carrusel.
+      </p>
+      <div class="form-group" style="margin-bottom:14px;">
+        <label>URL de Sincronización CSV del Google Sheet</label>
+        <input type="url" id="sheetCsvUrlInput" />
+      </div>
+      <div style="display:flex; gap:10px; justify-content:flex-end;">
+        <button class="btn btn-outline" onclick="closeCmsModal()">Cerrar</button>
+        <button class="btn btn-primary" onclick="saveSheetCsvUrl()">Guardar y Recargar</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

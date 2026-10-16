@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500">
+  <rect width="400" height="500" fill="#EFE8DD"/>
+  <circle cx="200" cy="220" r="135" fill="#FAF6F0"/>
+  <!-- Bride Silhouette (Ivory) -->
+  <path d="M135 105 C150 115, 175 115, 190 105 L198 168 L127 168 Z" fill="#F7F3EB" stroke="#C5A880" stroke-width="1.5"/>
+  <path d="M127 168 C102 260, 88 360, 75 445 L220 445 C210 360, 204 260, 198 168 Z" fill="#F7F3EB" stroke="#C5A880" stroke-width="1.5"/>
+  <!-- Bridesmaid / Cortejo Matching Silhouette -->
+  <path d="M212 108 L262 108 L272 170 L204 170 Z" fill="#7A5C61"/>
+  <path d="M204 170 L185 445 L305 445 L272 170 Z" fill="#7A5C61"/>
+  <rect x="28" y="455" width="344" height="28" rx="6" fill="#1E1916" opacity="0.82"/>
+  <text x="200" y="473" text-anchor="middle" fill="#FAF7F2" font-family="Georgia, serif" font-size="11" letter-spacing="1.5">NOVIAS &amp; CORTEJO MATCHING</text>
+</svg>
